@@ -5,15 +5,23 @@
 
 int main(int argc, char *argv[]) {
 	
+	int x=10;
+	int y= 20;
+	int *ptr;
 	
-	int i=365;
-	int *ptr=&i;
+	ptr = &x;
+	printf("x: %d\n",*ptr);
 	
-	printf("i address : %d\n",&i);
-	printf("i value : %d\n",i);
+	ptr=&y;
+	printf("y: %d\n",*ptr);
 	
-	printf("prt address : %d\n",ptr);
-	printf("prt address : %d\n",*ptr);
+	ptr = &x;
+	*ptr=20;
+	printf("x: %d\n",x);
+
+
+
+	
 	
 	
 	return 0;
